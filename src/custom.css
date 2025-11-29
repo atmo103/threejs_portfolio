@@ -1,0 +1,124 @@
+/* src/custom.css */
+
+/* Texto con gradiente */
+.head-text {
+  font-weight: 700;
+  font-size: 8rem;   /* ajusta si quieres */
+  line-height: 1;
+
+  background-image: linear-gradient(
+    to right,
+    #BEC1CF 60%,
+    #D5D8EA 60%,
+    #D5D8EA 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Mano saludando */
+.waving-hand {
+  animation: wave-animation 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* Fondo para la flecha */
+.arrow-gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+}
+
+/* Animación de la mano */
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(14deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(10deg); }
+  70% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ============================
+   CLASES "LEGACY" EN CSS PURO
+   ============================ */
+
+/* Fuente del curso */
+.font-generalsans {
+  font-family: 'General Sans', sans-serif;
+}
+
+/* Escala de negros */
+.bg-black-200 {
+  background-color: #0b0b10;
+}
+
+.bg-black-300 {
+  background-color: #15151d;
+}
+
+.bg-black-500 {
+  background-color: #272736;
+}
+
+.bg-black-600 {
+  background-color: #101016;
+}
+
+/* Bordes en negros */
+.border-black-200 {
+  border-color: #0b0b10;
+}
+
+.border-black-300 {
+  border-color: #15151d;
+}
+
+/* Escala de blancos / grises claros */
+.text-white-500 {
+  color: #9ca3af;
+}
+
+.text-white-600 {
+  color: #6b7280;
+}
+
+.text-white-800 {
+  color: #e5e7eb;
+}
+
+/* Color exacto #afb0b6 (como en el curso) */
+.text-\[\#afb0b6\] {
+  color: #afb0b6;
+}
+
+/* Simulación de utility "backdrop-filter" */
+.backdrop-filter {
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+/* grid-cols-[auto_1fr] — versión CSS pura con selector escapado */
+.grid-cols-\[auto_1fr\] {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+/* arrow-gradient — ya lo tenías parecido, lo consolidamos aquí */
+.arrow-gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+}
