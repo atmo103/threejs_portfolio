@@ -41,6 +41,12 @@ const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
         </div>
 
         {/* MOBILE HEADER */}
+
+        <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0' } `}>
+<nav className='p-5'>
+    <NavItems />
+</nav>
+        </div>
         </header>
   )
 }
